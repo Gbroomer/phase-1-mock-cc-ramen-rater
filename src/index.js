@@ -1,12 +1,10 @@
 let currentRamen
-let allRamen = []
 const ramenMenu = document.getElementById("ramen-menu")
 initialize()
 function initialize() {
   fetch("http://localhost:3000/ramens")
   .then(res=>res.json())
   .then(data =>{
-    allRamen = data
     data.forEach(ramen => generateNavBar(ramen))
     generateRamenDetail(data[0])
     addNewRamen()
