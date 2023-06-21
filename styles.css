@@ -89,6 +89,14 @@ input[type="submit"] {
   transition: all 0.3s;
 }
 
+#delete-button {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 input[type="submit"]:active {
   background-color: gray;
 }
